@@ -107,7 +107,9 @@ var two_step_task = {
 		transition: null,
 		step_2_action: null,
 		reward: null,
-		timeout: false
+		timeout: false,
+		structure: null,
+		step_1_choice: null
 	},
 	// ------------------------------------------
 	// ------------------------------------------
@@ -409,6 +411,8 @@ var two_step_task = {
 					// Record transition
 					two_step_task.data.transition = transition;
 					two_step_task.data.step_2 = step_2;
+					two_step_task.data.structure = two_step_task.transition.structure;
+					two_step_task.data.step_1_choice = choice_name;
 				}
 			}
 			return(trial);
@@ -593,7 +597,7 @@ var two_step_task = {
 			var instr_1 = {
 				type: jsPsychInstructions,
 				pages: [
-					'In this game (v0.2), you are opening boxes to find as many coins as you can.',
+					'In this game (v0.3), you are opening boxes to find as many coins as you can.',
 					'There is a red pair of boxes and a blue pair of boxes. Each individual box has a certain chance of containing a coin. For example, one box might have a 50% chance while another might have a 60% chance. The aim is to find a box with a high chance of containing a coin and choose it.',
 					'On the next screen, you can try choosing boxes to try to find coins. Use the "z" key to select the box on the left and the "m" key to select the box on the right. See if you can figure out which boxes have a high chance of giving you a coin.',
 					'Click "Next" to begin the practice.'
