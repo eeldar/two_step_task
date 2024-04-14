@@ -593,7 +593,7 @@ var two_step_task = {
 			var instr_1 = {
 				type: jsPsychInstructions,
 				pages: [
-					'In this game, you are opening boxes to find as many coins as you can.',
+					'In this game (v0.2), you are opening boxes to find as many coins as you can.',
 					'There is a red pair of boxes and a blue pair of boxes. Each individual box has a certain chance of containing a coin. For example, one box might have a 50% chance while another might have a 60% chance. The aim is to find a box with a high chance of containing a coin and choose it.',
 					'On the next screen, you can try choosing boxes to try to find coins. Use the "z" key to select the box on the left and the "m" key to select the box on the right. See if you can figure out which boxes have a high chance of giving you a coin.',
 					'Click "Next" to begin the practice.'
@@ -684,7 +684,7 @@ var two_step_task = {
 				pages: [
 					'Note that when you choose a red or blue box, your chance of finding a coin depends only on its symbol, not which green box you chose to get there.',
 					'The choice you make between the green boxes is still important because it can help you get whichever pair of boxes are most likely to contain coins.',
-					'The practice round is now over. The real game will take about 20 minutes, with breaks every 5 minutes. The real game will begin when you click "Next".'
+					'The practice round is now over. The real game will take about 10 minutes. The real game will begin when you click "Next".'
 				],
 				show_clickable_nav: true
 			}
