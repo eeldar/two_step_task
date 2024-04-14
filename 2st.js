@@ -597,7 +597,7 @@ var two_step_task = {
 			var instr_1 = {
 				type: jsPsychInstructions,
 				pages: [
-					'In this game, you are opening boxes to find as many coins as you can.',
+					'Two-step task v0.1: In this game, you are opening boxes to find as many coins as you can.',
 					'There is a red pair of boxes and a blue pair of boxes. Each individual box has a certain chance of containing a coin. For example, one box might have a 50% chance while another might have a 60% chance. The aim is to find a box with a high chance of containing a coin and choose it.',
 					'On the next screen, you can try choosing boxes to try to find coins. Use the "z" key to select the box on the left and the "m" key to select the box on the right. See if you can figure out which boxes have a high chance of giving you a coin.',
 					'Click "Next" to begin the practice.'
