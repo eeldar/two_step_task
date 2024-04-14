@@ -107,7 +107,9 @@ var two_step_task = {
 		transition: null,
 		step_2_action: null,
 		reward: null,
-		timeout: false
+		timeout: false,
+		choice_names: null,
+		structure: null
 	},
 	// ------------------------------------------
 	// ------------------------------------------
@@ -409,6 +411,8 @@ var two_step_task = {
 					// Record transition
 					two_step_task.data.transition = transition;
 					two_step_task.data.step_2 = step_2;
+					two_step_task.data.choice_names = two_step_task.interaction.choice_names;
+					two_step_task.data.structure = two_step_task.transition.structure
 				}
 			}
 			return(trial);
