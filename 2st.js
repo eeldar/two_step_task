@@ -696,7 +696,7 @@ var two_step_task = {
 				pages: [
 					'Note that when you choose a red or blue box, your chance of finding a coin depends only on its symbol, not which green box you chose to get there.',
 					'The choice you make between the green boxes is still important because it can help you get whichever pair of boxes are most likely to contain coins.',
-					'The practice round is now over. The real game will take about 20 minutes, with breaks every 5 minutes. The real game will begin when you click "Next".'
+					'The practice round is now over. The real game will take about 10 minutes. The real game will begin when you click "Next".'
 				],
 				show_clickable_nav: true
 			}
