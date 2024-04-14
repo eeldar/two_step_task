@@ -211,7 +211,7 @@ var two_step_task = {
 	// ------------------------------------------
 	// ------------------------------------------
 	transition: {
-		common_prob: 0.7,
+		common_prob: 0.75,
 		structure: {
 			'1A': {
 				common: '2A',
@@ -393,7 +393,6 @@ var two_step_task = {
 					if (data.response) {
 						// Record response
 						var choice_name = two_step_task.interaction.get_choice_name(data.response);
-						two_step_task.data.step_1_action = choice_name;
 						two_step_task.data.step_1_rt = data.rt;
 						two_step_task.data.response = response;
 						two_step_task.data.choice_names = two_step_task.interaction.choice_names;
@@ -421,6 +420,7 @@ var two_step_task = {
 					two_step_task.data.transition = transition;
 					two_step_task.data.step_2 = step_2;
 					two_step_task.data.structure = two_step_task.transition.structure;
+					two_step_task.data.step_1_action = choice_name;
 				}
 			}
 			return(trial);
