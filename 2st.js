@@ -49,7 +49,7 @@ var two_step_task = {
 			'2BA':			null,
 			'2BB':			null,
 			'reward':		null,
-			'no_reward':	null,
+			'no_reward':		null,
 			'timeout':		null
 		},
 		set_files_to_default: function() {
@@ -109,11 +109,7 @@ var two_step_task = {
 		reward: null,
 		timeout: false,
 		choice_names: null,
-		structure: null,
-		key: null,
-		keys: null,
-		key_idx: null
-			
+		structure: null			
 	},
 	// ------------------------------------------
 	// ------------------------------------------
@@ -395,10 +391,6 @@ var two_step_task = {
 						var choice_name = two_step_task.interaction.get_choice_name(data.response);
 						two_step_task.data.step_1_rt = data.rt;
 						two_step_task.data.response = response;
-						two_step_task.data.choice_names = two_step_task.interaction.choice_names;
-						two_step_task.data.keys = two_step_task.interaction.choice_keys;
-						two_step_task.data.key = data.response;
-						two_step_task.data.key_idx = two_step_task.interaction.get_choice_idx(data.response);
 						// Set up animation
 						two_step_task.animation.prepare(data.response);
 					} else {
